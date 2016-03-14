@@ -5,7 +5,7 @@ Welcome Page
 @stop
 @section('body')
 <h1>Hello, world!</h1>
-{{ $pages }}
+{{ $page_content }}
 
 
 
