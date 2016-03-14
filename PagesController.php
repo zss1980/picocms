@@ -23,7 +23,7 @@ class PagesController extends Controller
        
     }
 
-    //Get a view of requested page with a dynamic menu and a master layout or throw a 404-error page
+    //Get a view of requested page with a dynamic menu and content or throw a 404-error page
     //
     //@param string $page page from the route.php
     //@return view with parameters string $current_page, string $content, array $menu 
