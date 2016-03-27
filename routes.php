@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
-Route::get('/{page}', 'PagesController@pages');
-Route::resource('/admin/cms', 'PageManagerController');
+Route::get('/', 'PageController@index');
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'PageController@adminindex');
+    Route::get('/adminget', 'PageController@adminget');
+});
+Route::get('/{page}', 'PageController@pages');
+
 
 /*
 |--------------------------------------------------------------------------
